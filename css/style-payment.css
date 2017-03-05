@@ -1,0 +1,212 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+*,
+*:before,
+*:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+@font-face {
+	font-family: miso;
+	src: url('../fonts/miso-regular.ttf');
+}
+body {
+	background: url("../img/background.png") no-repeat, linear-gradient(to right, rgba(86,92,92, 1) 0%,rgba(33,37,40, 1) 100%);
+	background-size: cover;
+}
+
+.form{
+	/* Style for "Shape 2" */
+	max-width: 336px;
+	min-height: 532px;
+	margin: 35px auto;
+	background-color: #ffffff;
+}
+.form-header{
+	/* Style for "Shape 2 co" */
+	width: 100%;
+	height: 72px;
+	background-color: #f8edaf;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding: 24px;
+
+}
+.form-header__title{
+	/*width: 50%;*/
+}
+.form-header__title h1{
+	/* Style for "Harold Fin" */
+	color: #6e7f7b;
+	font-family: Montserrat;
+	font-size: 14px;
+	font-weight: 700;
+	margin: 0;
+
+}
+.form-header__title h2{
+	/* Style for "Your Total" */
+	color: #a6a28d;
+	font-family: Montserrat;
+	font-size: 10px;
+	font-weight: 400;
+	text-transform: uppercase;
+
+}
+.form-header__price{
+	/* Style for "$88" */
+
+}
+.form-header__price p{
+
+	color: #637570;
+	font-family: Montserrat;
+	font-size: 36px;
+	font-weight: 400;
+	line-height: 33px;
+}
+/*---------------------flexcontainer-------*/
+.flex-container{
+	min-height: 408px;
+	display: flex;
+	flex-direction:column;
+	justify-content:flex-start;
+	padding:45px 24px 24px;
+}
+.form-payment__label{
+	/* Style for "Credit car" */
+	color: #9eabad;
+	font-family: Montserrat;
+	font-size: 13px;
+	font-weight: 400;
+}
+.form-payment__input{
+	width: 100%;
+	height: 44px;
+	/*margin-top: 5px;*/
+	/*margin-bottom: 28px;*/
+	font-weight: 500;
+	padding-left: 10px;
+	border: 2px solid #bac8cb;
+	margin-bottom: 28px;
+}
+.form-payment__expiration-data{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.text{
+	color: #727f82;
+	font-size: 13px;
+	font-weight: 400;
+	font-family: Montserrat;
+}
+.form-payment__expiration-data select:first-child{
+	flex-basis: 176px;
+}
+.form-payment__expiration-data select:nth-child(2){
+	flex-basis: 96px;
+}
+.cvv{
+	width: 96px;
+}
+
+.form-payment__input__CVV p{
+	/* Style for "3 or 4 dig" */
+	color: #9eabad;
+	font-family: Montserrat;
+	font-size: 12px;
+	font-weight: 400;
+	max-width: 167px;
+	display: inline-block;
+	/*float: right;*/
+	text-align: center;
+	vertical-align: baseline;
+}
+.form-payment__input__CVV p>a{
+	text-decoration: none;
+	color: #9eabad;
+	border-bottom: 1px solid #9eabad;
+}
+.form-payment__submit{
+	/* Style for "Shape 7" */
+	width: 100%;
+	height: 48px;
+	background-color: #25b86a;
+	/* Style for "Pay" */
+	color: #ffffff;
+	font-family: Montserrat;
+	font-size: 20px;
+	font-weight: 700;
+	border: none;
+
+}
+hr{
+	opacity: 0.2;
+	margin-top: 10px;
+	margin-bottom: 30px;
+}
+.form-payment__cancel{
+	/* Style for "Cancel ord" */
+	width: 80px;
+	color: #9eabad;
+	font-family: Montserrat;
+	font-size: 12px;
+	font-weight: 400;
+	text-decoration: none;
+	text-align: center;
+	margin: 18px auto 0;
+	border-bottom: 1px solid #9eabad;
+}
+/* Typography */
+a,
+input[type="submit"],
+input[type="button"],
+button{
+	-webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	-moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+input[type="submit"],
+input[type="button"],
+button,
+.ba-button{
+	display: inline-block;
+}
+input[type="submit"]:hover,
+input[type="button"]:hover,
+button:hover,
+.ba-button:hover{
+
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+
+	-webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	-moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+
+}
+textarea {
+
+}
