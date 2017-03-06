@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>payment form</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<meta name="description" content="" />
+	<link rel="icon" href="favicon.png"/>
+	<link rel="stylesheet" href="css/normalize.css" />
+	<link rel="stylesheet" href="css/layout.css" />
+	<link rel="stylesheet" href="css/style-payment.css" />
+
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+
+<main class="form">
+
+	<header class="form-header">
+		<section class="form-header__title">
+			<h1>Harold Finch</h1>
+			<h2>Your Total</h2>
+		</section>
+		<section class="form-header__price">
+			<p>$88</p>
+		</section>
+	</header>
+
+	<section class="flex-container">
+
+		<label for="card-number" class="form-payment__label">Credit card number</label>
+		<input type="number" id="card-number" class="form-payment__input">
+
+
+
+		<label for="form-payment__select" class="form-payment__label">Expiration date</label>
+
+		<section class="form-payment__expiration-data">
+		<select id="form-payment__select" class="form-payment__input text">
+			<option value="1">Month</option>
+			<option value="2">January</option>
+			<option value="3">February</option>
+			<option value="4">March</option>
+			<option value="5">April</option>
+			<option value="6">May</option>
+			<option value="7">June</option>
+			<option value="8">July</option>
+			<option value="9">August</option>
+			<option value="10">September</option>
+			<option value="11">October</option>
+			<option value="12">November</option>
+			<option value="13">December</option>
+		</select>
+		<select class="form-payment__input text">
+			<option value="1">Year</option>
+			<option value="2">2015</option>
+			<option value="3">2016</option>
+			<option value="4">2017</option>
+			<option value="5">2018</option>
+			<option value="6">2019</option>
+		</select>
+		</section>
+
+
+		<label class="text" for="CVV">CVV</label>
+	<section class="form-payment__input__CVV">
+
+		<input type="number" id="CVV" class="cvv form-payment__input">
+		<p>3 or 4 digits - <a href="#">view example</a></p>
+	</section>
+
+		<hr>
+
+	<button type="submit" class="form-payment__submit">Pay</button>
+		<a href="#" class="form-payment__cancel">Cancel order</a>
+	</section>
+
+
+</main>
+
+</body>
+</html>
